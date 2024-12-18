@@ -1,0 +1,86 @@
+.film-card {
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--bg-light); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  margin: 1rem;
+}
+
+.film-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.film-image {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+}
+
+
+.film-header {
+  padding: 1rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.film-header h2 {
+  font-size: 1rem; 
+  color: var(--primary-dark); 
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+
+body.light .film-card {
+  background-color: var(--bg-light); 
+  border: 1px solid var(--divider-light); 
+}
+
+
+body.light .film-header h2 {
+  color: var(--primary-dark); 
+}
+
+
+body.dark .film-header h2 {
+  color: var(--primary-light); 
+}
+
+
+.film-details-btn {
+  background-color: var(--highlight);
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.film-details-btn:hover {
+  background-color: #4c94d6;
+}
+
+
+.film-detail {
+  padding: 0.5rem;
+  color: var(--primary-light);
+  font-size: 0.9rem;
+}
+
+.film-description {
+  margin-bottom: 0.5rem;
+}
+
+.film-tech, .film-genre {
+  font-weight: bold;
+  color: var(--highlight);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,111 @@
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--divider);
+  
+}
+
+@media (max-width: 770px) {
+  nav {
+    padding: 0 2rem;
+  }
+}
+
+nav > h2 {
+  color: rgb(209, 155, 209);
+  font-family: cursive;
+}
+
+nav > ul {
+  display: flex;
+  gap: 3rem;
+}
+
+#themeBtn {
+  background: none;
+  border: none;
+  color: inherit;
+  transform: scale(1.5);
+}
+
+nav a {
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--highlight);
+}
+
+nav > img {
+  width: 160px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid purple;
+  margin-top: 10px;
+}
+
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.modal {
+  background:black;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+.modal input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.modal button {
+  padding: 0.7rem 1.5rem;
+  background-color: #6a5acd;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #5b4fb0;
+}
+
+
